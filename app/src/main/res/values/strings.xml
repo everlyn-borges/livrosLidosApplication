@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">livrosLidosApplication</string>
+    <string name="titleTextView">TextView</string>
+    <string name="minhasLeituras">Minhas Leituras</string>
+    <string name="buttonPlus">+</string>
+    <string name="MensaemNaoEncontradotextView">Você não tem livros cadastrados</string>
+    <string name="adicione_um_livro">Adicione um livro</string>
+    <string name="button_adicionar_livro">Adicionar Livro</string>
+    <string name="categoriaTextview">TextView</string>
+    <string name="profissaoText">Profissão</string>
+    <string name="relacionamentoText">Relacionamento</string>
+    <string name="saudeText">Saúde</string>
+    <string name="lazerText">Lazer</string>
+    <string name="nome_do_livroEditText">Nome do livro</string>
+    <string name="autor_aEditText">Autor(a)</string>
+    <string name="switchLeitura_concluida">Leitura concluída</string>
+    <string name="nome_do_livro">Nome do livro</string>
+    <string name="autoriaTextView">Autoria</string>
+    <string name="categoria_do_livroTextView">Categoria do livro</string>
+    <string name="leitura_concluida">Leitura Concluída</string>
+    <string name="minhasResenhas">Minhas Resenhas</string>
+    <string name="adicionar_livro">Adicionar livro</string>
+    <string name="ver_resenha">Ver resenha</string>
+    <string name="verResenhaButton">Ver resenha</string>
+    <string name="button_ver_resenha">Ver resenha</string>
+    <string name="resumo_das_leituras">Resumo das Leituras</string>
+    <string name="total_de_livros_lidos">Total de livros lidos</string>
+    <string name="livros_por_categoria">Livros Por Categoria</string>
+</resources>

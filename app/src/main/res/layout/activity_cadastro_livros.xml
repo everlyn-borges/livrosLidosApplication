@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroLivros">
+
+    <TextView
+        android:id="@+id/telaAddLivrosTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/adicione_um_livro"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/button_adicionar_livro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leituraConcluidaSwitch" />
+
+    <ImageButton
+        android:id="@+id/imageButtonProfissao"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_round_background"
+        android:contentDescription="@android:string/untitled"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonRelacionamento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoraiTextView"
+        app:srcCompat="@drawable/job" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSaude"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_round_background"
+        android:contentDescription="@android:string/untitled"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonLazer"
+        app:layout_constraintTop_toBottomOf="@+id/categoraiTextView"
+        app:srcCompat="@drawable/health" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRelacionamento"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_round_background"
+        android:contentDescription="@android:string/untitled"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSaude"
+        app:layout_constraintTop_toBottomOf="@+id/categoraiTextView"
+        app:srcCompat="@drawable/relationship" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLazer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btn_round_background"
+        android:contentDescription="@android:string/untitled"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoraiTextView"
+        app:srcCompat="@drawable/leisure" />
+
+    <TextView
+        android:id="@+id/businessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/profissaoText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonProfissao"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonProfissao"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonProfissao" />
+
+    <TextView
+        android:id="@+id/relationshipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/relacionamentoText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonRelacionamento"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonRelacionamento"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRelacionamento" />
+
+    <TextView
+        android:id="@+id/healthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/saudeText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonSaude"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonSaude"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSaude" />
+
+    <TextView
+        android:id="@+id/leisureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/lazerText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonLazer"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonLazer"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonLazer" />
+
+    <EditText
+        android:id="@+id/nomeLivroEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/nome_do_livroEditText"
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/businessTextView"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/resenhaEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/autor_aEditText"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeLivroEditText"
+        tools:ignore="LabelFor" />
+
+    <RatingBar
+        android:id="@+id/avaliacaoRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@android:string/untitled"
+        android:progressTint="#3F51B5"
+        android:scaleX="0.70"
+        android:scaleY="0.70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resenhaEditText" />
+
+    <TextView
+        android:id="@+id/nomeDoLivroTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/nome_do_livro"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nomeLivroEditText"
+        app:layout_constraintEnd_toStartOf="@+id/nomeLivroEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nomeLivroEditText" />
+
+    <TextView
+        android:id="@+id/nomeAutortextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/autoriaTextView"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/resenhaEditText"
+        app:layout_constraintEnd_toStartOf="@+id/resenhaEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resenhaEditText" />
+
+    <TextView
+        android:id="@+id/categoraiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/categoria_do_livroTextView"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telaAddLivrosTextView" />
+
+    <Switch
+        android:id="@+id/leituraConcluidaSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:minHeight="48dp"
+        android:text="@string/leitura_concluida"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avaliacaoRatingBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

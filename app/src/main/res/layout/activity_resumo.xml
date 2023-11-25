@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumoActivity">
+
+    <TextView
+        android:id="@+id/resumoDasLeituras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/resumo_das_leituras"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalLivrosLidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/total_de_livros_lidos"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resumoDasLeituras" />
+
+    <TextView
+        android:id="@+id/totalDeLivrosEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="0"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalLivrosLidos" />
+
+    <TextView
+        android:id="@+id/totalLivrosEmLeitura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Total de livros em leitura"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalDeLivrosEditText" />
+
+    <TextView
+        android:id="@+id/totalDeLivrosEmLeituraEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="0"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalLivrosEmLeitura" />
+
+    <TextView
+        android:id="@+id/livrosPorCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/livros_por_categoria"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalDeLivrosEmLeituraEditText" />
+
+    <ImageView
+        android:id="@+id/profissaoImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/relacionamentoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livrosPorCategoria"
+        app:srcCompat="@drawable/job"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/relacionamentoImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/saudeImageView"
+        app:layout_constraintTop_toBottomOf="@+id/livrosPorCategoria"
+        app:srcCompat="@drawable/relationship"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/saudeImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/lazerImageView"
+        app:layout_constraintTop_toBottomOf="@+id/livrosPorCategoria"
+        app:srcCompat="@drawable/health"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/lazerImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livrosPorCategoria"
+        app:srcCompat="@drawable/leisure"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/businessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/profissaoText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/profissaoImageView"
+        app:layout_constraintStart_toStartOf="@+id/profissaoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/profissaoImageView" />
+
+    <TextView
+        android:id="@+id/relationshipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/relacionamentoText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/relacionamentoImageView"
+        app:layout_constraintStart_toStartOf="@+id/relacionamentoImageView"
+        app:layout_constraintTop_toBottomOf="@+id/relacionamentoImageView" />
+
+    <TextView
+        android:id="@+id/healthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/saudeText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/saudeImageView"
+        app:layout_constraintStart_toStartOf="@+id/saudeImageView"
+        app:layout_constraintTop_toBottomOf="@+id/saudeImageView" />
+
+    <TextView
+        android:id="@+id/leisureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:text="@string/lazerText"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/lazerImageView"
+        app:layout_constraintStart_toStartOf="@+id/lazerImageView"
+        app:layout_constraintTop_toBottomOf="@+id/lazerImageView" />
+
+    <TextView
+        android:id="@+id/totalProfissaoEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="0"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/businessTextView"
+        app:layout_constraintStart_toStartOf="@+id/businessTextView"
+        app:layout_constraintTop_toBottomOf="@+id/businessTextView" />
+
+    <TextView
+        android:id="@+id/totalRelacionamentoEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="0"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/relationshipTextView"
+        app:layout_constraintStart_toStartOf="@+id/relationshipTextView"
+        app:layout_constraintTop_toBottomOf="@+id/relationshipTextView" />
+
+    <TextView
+        android:id="@+id/totalSaudeEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="0"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/healthTextView"
+        app:layout_constraintStart_toStartOf="@+id/healthTextView"
+        app:layout_constraintTop_toBottomOf="@+id/healthTextView" />
+
+    <TextView
+        android:id="@+id/totalLazerEditText"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:hint="0"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/leisureTextView"
+        app:layout_constraintStart_toStartOf="@+id/leisureTextView"
+        app:layout_constraintTop_toBottomOf="@+id/leisureTextView" />
+
+    <Button
+        android:id="@+id/buttonMinhasLeituras"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="MinhasLeituras"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
